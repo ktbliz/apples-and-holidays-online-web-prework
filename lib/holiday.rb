@@ -54,8 +54,8 @@ end
 def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
+  
   holiday_hash[:spring][:memorial_day] << supply
-
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
@@ -63,12 +63,12 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # remember to return the updated hash
   
   holiday_hash[season][holiday_name] = supply_array
-
 end
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
-holiday_hash[:winter].values.flatten 
+
+  holiday_hash[:winter].values.flatten 
 end
 
 def all_supplies_in_holidays(holiday_hash)
@@ -91,17 +91,10 @@ holiday_hash.each do |key, value|
       season_array << x.capitalize
     end
     holiday = season_array.join(" ")
-    
     supplies = value2.join(", ")
-  
     puts "  #{holiday}: #{supplies}"
-  
   end
-
-  
-
 end 
-
 end
 
 all_supplies_in_holidays(holiday_hash)
@@ -110,7 +103,11 @@ def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
   
-  
+  holiday_hash.each do |key, value|
+    
+    
+    
+  end
 
 end
 

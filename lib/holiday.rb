@@ -90,12 +90,11 @@ holiday_hash.each do |key, value|
     key2.to_s.split("_").collect do |x|
       season_array << x.capitalize
     end
-    puts season_array.join(" ")
+    holiday = season_array.join(" ")
+    
+    supplies = value2.join(", ")
   
-  
-  value2.each do |x|
-    puts x
-  end 
+    puts "#{holiday}: #{supplies}"
   
   end
 

@@ -109,8 +109,8 @@ def all_holidays_with_bbq(holiday_hash)
           holiday_with_bbq << key2
         
         end 
-    end 
-    puts holiday_with_bbq
+    end  
+    holiday_with_bbq
   end
 
 end

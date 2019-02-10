@@ -103,10 +103,12 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   
   holiday_hash.each do |key, value|
-    key.collect do |key2, value2|
-      
+    holiday_with_bbq = []
+    key.each do |key2, value2|
+        if value2.inludes?("BBQ")
+          holiday_with_bbq << key2
         
-      end 
+        end 
     end 
     
   end

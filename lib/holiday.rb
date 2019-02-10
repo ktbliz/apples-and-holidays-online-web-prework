@@ -97,6 +97,23 @@ end
 
 end
 
+
+holiday_hash.each do |key, value|
+  
+  puts "#{key.to_s.capitalize}:"
+  
+  value.each do |key2, value2|
+    season_array = []
+    key2.to_s.split("_").collect do |x|
+      season_array << x.capitalize
+    end
+    puts season_array.join(" ")
+  end
+
+end 
+
+end
+
 all_supplies_in_holidays(holiday_hash)
 
 def all_holidays_with_bbq(holiday_hash)

@@ -105,16 +105,15 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_with_bbq = []
   holiday_hash.each do |key, value|
     
-    
     value.collect do |key2, value2|
         if value2.include?("BBQ")
           holiday_with_bbq << key2
         end 
     end  
-    puts holiday_with_bbq
-    return holiday_with_bbq
+    
   end
-
+  puts holiday_with_bbq
+  return holiday_with_bbq
 end
 
 

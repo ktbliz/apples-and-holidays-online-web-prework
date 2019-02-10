@@ -91,7 +91,15 @@ holiday_hash.each do |key, value|
       season_array << x.capitalize
     end
     puts season_array.join(" ")
+  
+  
+  value2.each do |x|
+    puts x
+  end 
+  
   end
+
+  
 
 end 
 

@@ -94,7 +94,7 @@ holiday_hash.each do |key, value|
     
     supplies = value2.join(", ")
   
-    puts "#{holiday}: #{supplies}"
+    puts "  #{holiday}: #{supplies}"
   
   end
 
